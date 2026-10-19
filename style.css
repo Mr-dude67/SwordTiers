@@ -1,0 +1,213 @@
+html, body { 
+	
+	background-color: #ffece6;
+	cursor: none !important;
+	font-family: "Comic Sans MS";
+	text-align: center;
+	
+}
+
+#cursor {
+	
+	left: 0;
+	top: 0;
+	
+	width: 20px;
+	height: 20px;
+	background-color: #ff8c69;
+	border-radius: 50%;
+	
+	position: fixed;
+	pointer-events: none;
+	
+	transform: translate(-50%, -50%);
+	z-index: 9999;
+	
+	transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+	
+}
+
+.button, a {
+	
+	cursor: none !important;
+	
+}
+
+.button {
+	
+	display: inline-box;
+	align-items: center;
+	justify-items: center;
+	gap: 20px;
+	
+	background-color: #F88379;
+	border: none;
+	color: white;
+	
+	position: absolute;
+	left: 50%;
+	top: 5vh;
+	border-radius: 25px;
+	outline: 2px solid red;
+	
+	transform: translate(-50%, -50%) scale(1);
+	transition: transform 0.2s ease-in-out 0.1s;
+	
+}
+
+.button:active {
+	
+	transform: translate(-50%, -50%) scale(1.03);
+	
+	transition: transform 0.1s ease-in-out 0s;
+	
+}
+
+.tab {
+	
+	display: flex;
+	position: relative;
+	
+	box-sizing: border-box;
+	padding-block: 70px;
+	
+	justify-content: center;
+	gap: 20px;
+	align-items: top;
+	
+	width: 100vw;
+	height: 100vh;
+	
+	background-color: white;
+	border-radius: 25px;
+	
+	left: 50%;
+	top: 70vh;
+	
+	transform: translate(-50%, -50%);
+	
+}
+
+.tab-gamemode {
+	
+	display: flex;
+	position: relative;
+	
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	
+	width: 100px;
+	height: 70px;
+	
+	bottom: 140px;
+	
+	background-color: pink;
+	border-radius: 25px;
+	filter: brightness(100%);
+	
+}
+
+.tab-gamemode:hover {
+	
+	filter: brightness(110%);
+	
+}
+
+.gamemode-image {
+	
+	width: 50px;
+	height: 50px;
+	
+	mix-blend-mode: multiply;
+	filter: brightness(250%);
+	
+}
+
+.player {
+	
+	display: flex;
+	position: absolute;
+	
+	left: 50%;
+	
+	gap: 20px;
+	font-size: 20px;
+	
+	box-sizing: border-box;
+	padding: 10px;
+	
+	width: 80vw;
+	height: 100px;
+	
+	background-color: pink;
+	border-radius: 25px;
+	
+	transform: translateX(-50%);
+	
+}
+
+.player-head {
+	
+	border: 2px solid white;
+	
+}
+
+.small-ranking-img {
+	
+	position: relative;
+	
+	width: 40px;
+	height: 40px;
+	
+	border-radius: 25px;
+	top: 15px;
+	
+}
+
+.tier-box {
+	
+	position: relative;
+	
+	width: 100px;
+	height: 70px;
+	
+	background-color: pink;
+	border-radius: 25px;
+	padding: 5px;
+	
+}
+
+.tier-box-holder {
+	
+	display: flex;
+	
+	justify-content: flex-start;
+	flex-direction: column;
+	align-items: center;
+	
+	width: 200px;
+	min-height: 500px;
+	
+	background-color: #f2f2f2;
+	border-radius: 25px;
+	padding: 5px;
+	
+}
+
+.tier-box-holder-holder {
+	
+	display: flex;
+	position: absolute;
+	
+	justify-content: center;
+	
+	gap: 50px;
+	
+}
+
+@media (hover:none) {
+	#cursor {
+		display: none !important;
+	}	
+}
