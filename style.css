@@ -127,7 +127,7 @@ html, body {
 .player {
 	
 	display: flex;
-	position: absolute;
+	position: relative;
 	
 	left: 50%;
 	
@@ -153,6 +153,13 @@ html, body {
 	
 }
 
+.tier-text {
+	
+	position: relative; 
+	bottom: 3.5px;
+	
+}
+
 .small-ranking-img {
 	
 	position: relative;
@@ -162,6 +169,14 @@ html, body {
 	
 	border-radius: 25px;
 	top: 15px;
+	
+}
+
+.placement-text {
+	
+	position: absolute; 
+	left: 1000px;
+	bottom: 5px;
 	
 }
 
@@ -201,6 +216,19 @@ html, body {
 	position: absolute;
 	
 	justify-content: center;
+	
+	gap: 50px;
+	
+}
+
+.player-holder {
+	
+	display: flex;
+	position: absolute;
+	
+	justify-content: flex-start;
+	flex-direction: column;
+	align-items: center;
 	
 	gap: 50px;
 	
