@@ -28,7 +28,7 @@ function addPlayer(username, tier, gmImg, ranking) {
 	
 	const playerHead = document.createElement("img");
 	playerHead.classList.add("player-head");
-	playerHead.src = "https://minotar.net/avatar/" + username
+	playerHead.src = "https://render.crafty.gg/3d/bust/" + username;
 	
 	const playerUsername = document.createElement("p");
 	playerUsername.textContent = username;
@@ -57,3 +57,4 @@ function addPlayer(username, tier, gmImg, ranking) {
 
 addPlayer('speedrun1', 'HT1', 'sword.jpg', '#1');
 addPlayer('DrNamee', 'LT5', 'sword.jpg', '#2');
+addPlayer('takitherealboss', 'LT5', 'sword.jpg', '#3');
